@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
-
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate>
+@property(nonatomic, strong) UITextField *textInput;
+@property(nonatomic, strong) UIButton *casesButton;
+@property(nonatomic, strong) UIButton *deathsButton;
+@property(nonatomic, strong) UIButton *recoveredButton;
+@property(nonatomic, strong) UITableView *table;
+@property(nonatomic, strong) BarGraph* graph;
 @end
 
